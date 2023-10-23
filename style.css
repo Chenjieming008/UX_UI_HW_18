@@ -1,0 +1,35 @@
+.flexContainer {
+    display: flex;
+}
+.flexContainer > div {
+    width: 33%;
+    /* Margin and padding to ensure even spacing */
+    margin: 100%; 
+    padding: 100%;
+}
+.flexContainer {
+    flex-direction: row; /* Default value. Use "column" for vertical */
+}
+
+.workGrid {
+    display: grid;
+}
+
+.workGrid {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.workGrid {
+    grid-template-areas: 
+        "header header"
+        "content1 content2"
+        "content3 content4";
+}
+
+.header {
+    grid-area: header;
+}
+.content1 {
+    grid-area: content1;
+}
